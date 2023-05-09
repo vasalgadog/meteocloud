@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Climáticos</title>
+    <link rel="stylesheet" href="../Assets/js/DataTable/datatables.min.css">
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+<body>
+    <div class="container p-3" >
+        <header>
+            <h1 class="h3 text-center">Catastro de Estaciones Meteorológicas</h1>
+            <button id='view' class='btn btn-primary' type='button' data='codigoNacional' onClick="openNewWindow()" >Ver detalles</button>
+        </header>
+        <main>
+            <table id="TablaDatos" class="table text-center table-bordered display nowrap responsive" cellspacing = "0" width="100%">
+                <thead class="thead-dark">
+                <tr>
+                    <th class="border text-center border-secondary">CodNac</th>
+                    <th class="border text-center border-secondary">ESTACIÓN</th>
+                    <th class="border text-center border-secondary">REGIÓN</th>
+                    <th class="border text-center border-secondary">ZONA</th>
+                    <th class="border text-center border-secondary">OMM</th>
+                    <th class="border text-center border-secondary">OACI</th>
+                    <th class="border text-center border-secondary">LATITUD</th>
+                    <th class="border text-center border-secondary">LONGITUD</th>
+                    <th class="border text-center border-secondary">ALTURA</th>
+                    <th class="border text-center border-secondary">OTROS</th>
+                </tr>
+                </thead>
+                <tbody class="cargarDatosTablaCatastro">
+                
+                </tbody>
+            </table>
+        </main>
+        <footer>
+        </footer>
+    </div>
+
+    
+    <script src="../Assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../Assets/js/bootstrap.min.js"></script>
+    <script src="../Assets/js/DataTable/datatables.min.js"></script>
+    <script src="../Assets/js/DataTable/dataTables.responsive.min.js"></script>
+    <script src="../Assets/js/procesarTablaCatastro.js"></script>
+
+    
+
+</body>
+</html>
